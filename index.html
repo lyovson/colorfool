@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space+Mono"
+    />
+    <script src="index.js" module defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="titleDive " class="mainDiv">
+      <div id="leftDiv">
+        <h1 id="title">colorFool</h1>
+      </div>
+
+      <div id="options" class="mainDiv">
+        <div id="colSysDiv" class="optionsDiv">
+          <p id="cssSys" class="optionsP">CSS</p>
+          <p id="hexSys" class="optionsP">HEX</p>
+          <p id="rgbSys" class="optionsP">RGB</p>
+          <p id="hslSys" class="optionsP">HSL</p>
+        </div>
+
+        <div id="newGameDiv" class="optionsDiv">
+          <p id="exLink" class="fa fa-twitter optionsP"></p>
+          <p id="info" class="fa fa-info optionsP"></p>
+          <p id="newGame" class="optionsP">Restart</p>
+        </div>
+
+        <div id="gameDiffDiv" class="optionsDiv">
+          <p id="easyDiff" class="optionsP">Easy</p>
+          <p id="mediumDiff" class="optionsP">Medium</p>
+          <p id="hardDiff" class="optionsP">Hard</p>
+        </div>
+      </div>
+
+      <div id="infoDiv" class="nope">
+        <h3 id="Interface" class="infoH3">Description</h3>
+        <p>
+          colorFool is the ultimate color picking game. Learn different color
+          modes while playing.
+        </p>
+        <p>
+          Decipher the code given in the magenta box below and choose the right
+          square, to reveal a star. Progress through levels and gain score. When
+          finished, Press the turqoise restart button to get a star rating, with
+          a maxium of three. 3 levels of difficulty guarantee fun to everybody
+          regardless of skill level.
+        </p>
+        <p>
+          Please contact me on Twitter with comments and suggestions. The bird
+          icon is on the Options bar.
+        </p>
+
+        <h3 id="Interface" class="infoH3">Interface</h3>
+        <p>
+          Keyboard shorcuts're given between square brackets when available.
+        </p>
+
+        <ul>
+          <li id="cssLi">
+            CSS - Switches color mode to CSS named colors. [<span class="ks">
+              s </span
+            >]
+          </li>
+          <li id="hexLi">
+            HEX - Switches color mode to HEX colors. [<span class="ks"> x </span
+            >]
+          </li>
+          <li id="rgbLi">
+            RGB - Switches color mode to RGB colors. [<span class="ks"> b </span
+            >]
+          </li>
+          <li id="hslLi">
+            HSL - Switches color mode to HSL colors. [<span class="ks"> l </span
+            >]
+          </li>
+          <li id="linkLi">
+            <i class="fa fa-twitter"></i> - Link to my Twitter.
+          </li>
+          <li id="infoLi">
+            <i class="fa fa-info"></i> - Toggles info pane. [<span class="ks">
+              i </span
+            >]
+          </li>
+          <li id="restartLi">
+            Restart - Restarts the game and ranks the last run. [<span
+              class="ks"
+            >
+              r </span
+            >]
+          </li>
+          <li id="easyLi">
+            Easy - Switches to a 3 square board. [<span class="ks"> e </span>]
+          </li>
+          <li id="mediumLi">
+            Medium - Switches to a 6 square board. [<span class="ks"> m </span>]
+          </li>
+          <li id="hardLi">
+            Hard - Switches to a 9 square board. [<span class="ks"> h </span>]
+          </li>
+          <li id="boardLi">
+            The Board - Shows squares with different backgrounds. [<span
+              class="ks"
+              >1</span
+            >
+            - <span class="ks">9</span>]
+          </li>
+          <li id="levelLi">Level - Shows the current level.</li>
+          <li id="colorLi">The Color - Shows the right color code.</li>
+          <li id="scoreLi">The Score - Shows the current score.</li>
+          <li id="inboxLi">
+            Inbox - Shows info, hints and jokes. Mostly jokes. Also shows your
+            star rating after you restart.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="gameboard" class="mainDiv">
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+      <div class="square">
+        <p class="squareP"></p>
+      </div>
+    </div>
+
+    <div id="rightDiv">
+      <div id="dashboard" class="mainDiv">
+        <div id="gameLevelDiv" class="dashboardDiv">
+          <p id="gameLevel" class="dashboardP">1 Lv</p>
+        </div>
+
+        <div id="theColorDiv" class="dashboardDiv">
+          <p id="theColor" class="dashboardP">#000000</p>
+        </div>
+
+        <div id="gameScoreDiv" class="dashboardDiv">
+          <p id="gameScore" class="dashboardP">0 pt</p>
+        </div>
+      </div>
+
+      <div id="messageBoxDiv" class="inboxDiv">
+        <p id="messageBox">Inbox</p>
+      </div>
+    </div>
+  </body>
+</html>
